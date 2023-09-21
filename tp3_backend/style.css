@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Bebas+Neue&display=swap');
+
+
+* {
+    font-family: 'Barlow', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    color: #50535C;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    transition: 300ms;
+}
+
+a:hover {
+    text-decoration: none;
+    transition: 300ms;
+}
+
+main {
+    width: 90%;
+    margin: 50px auto 50px auto;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+strong {
+    font-weight: 700;
+}
+
+
+/* Nav */
+
+nav {
+    background-color: #50535C;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+nav img {
+    max-height: 80px;
+}
+
+nav .info {
+    text-align: right;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+nav .info p.name {
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0;
+}
+
+nav .info p.data {
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 40px 20px;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    nav .info {
+        text-align: center;
+        margin-top: 30px;
+    }
+    nav img {
+        max-width: 90%;
+        max-height: auto;
+    }
+}
+
+
+
+/* Header */
+
+header {
+    width: 100%;
+    margin: 0 auto 60px auto;
+}
+
+header h1 {
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    padding: 0 10px;
+    margin: 10px 0;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+}
+
+header h2 {
+    width: 100%;
+    font-size: 42px;
+    text-align: center;
+    padding: 0 10px;
+    margin: 10px 0;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 42px;
+    }
+    header h2 {
+        font-size: 36px;
+    }
+}
+
+
+
+/* Form */
+
+main form {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main form label {
+    display: block;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+main form input[type="text"],
+input[type="password"] {
+    display: block;
+    text-align: center;
+    margin: 10px auto 50px auto;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    width: 30%;
+    padding: 7px 20px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    outline: none;
+    border: 3px solid #b6b6b6;
+    transition: 300ms;
+}
+
+main form input[type="text"]:focus,
+input[type="password"]:focus {
+    border: 3px solid #767676;
+    background-color: #e6ffc8;
+    transition: 300ms;
+}
+
+@media screen and (max-width: 1366px) {
+    main form input[type="text"],
+    input[type="password"] {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    main form input[type="text"],
+    input[type="password"] {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main form input[type="text"],
+    input[type="password"] {
+        width: 90%;
+    }
+}
+
+
+main .buttons {
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 50px;
+}
+
+main form input[type="submit"],
+input[type="reset"] {
+    font-family: 'Barlow', sans-serif;
+    color: #50535C;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 7px 20px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    display: block;
+    text-align: center;
+    margin: 30px auto 0 auto;
+    width: fit-content;
+    outline: none;
+    border: 0;
+    transition: 300ms;
+}
+
+main form input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #50535C;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    transition: 300ms;
+}
+
+main form input[type="submit"]:hover {
+    color: #d3d93c;
+}
+
+main form input[type="reset"]:hover {
+    color: #f1f1f1;
+}
+
+main form input[type="submit"] {
+    background-color: #d3d93c;
+}
+
+main form input[type="reset"] {
+    background-color: #bababa;
+}
+
+
+
+
+/* Login */
+
+main img {
+    margin: 120px auto;
+    display: block;
+    max-width: 70%;
+}
+
+main img.fail {
+    margin: 50px auto;
+    display: block;
+    max-width: 70%;
+    border-radius: 5px;
+}
+
+main a.link-button {
+    font-family: 'Barlow', sans-serif;
+    background-color: #d3d93c;
+    color: #50535C;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 7px 20px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    display: block;
+    text-align: center;
+    margin: 30px auto 0 auto;
+    width: fit-content;
+    outline: none;
+    border: 0;
+    transition: 300ms;
+}
+
+main a.link-button:hover {
+    background-color: #50535C;
+    color: #d3d93c;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    transition: 300ms;
+}
+
+
+
+/* Footer */
+
+footer {
+    background: #50535C;
+    padding: 10px 40px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    width: 100%;
+    margin: 100px auto 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+footer .footer-links {
+    font-size: 30px;
+}
+
+footer .footer-links a {
+    color: #d3d93c;
+    padding: 0 20px 0 0;
+    transition: 300ms;
+}
+
+footer .footer-links a:hover {
+    color: #ffffff;
+    transition: 300ms;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        flex-flow: column wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 20px;
+    }
+    footer p {
+        text-align: center;
+    }
+}
+
