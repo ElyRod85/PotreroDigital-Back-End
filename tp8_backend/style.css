@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Bebas+Neue&display=swap');
+
+
+* {
+    font-family: 'Barlow', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    color: #50535C;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    transition: 300ms;
+}
+
+a:hover {
+    text-decoration: none;
+    transition: 300ms;
+}
+
+main {
+    width: 90%;
+    margin: 50px auto 50px auto;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+strong {
+    font-weight: 700;
+}
+
+
+
+
+/* Nav */
+
+nav {
+    background-color: #50535C;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+nav img {
+    max-height: 80px;
+}
+
+nav .info {
+    text-align: right;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+nav .info p.name {
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0;
+}
+
+nav .info p.data {
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 40px 20px;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    nav .info {
+        text-align: center;
+        margin-top: 30px;
+    }
+    nav img {
+        max-width: 90%;
+        max-height: auto;
+    }
+}
+
+
+
+/* Header */
+
+header {
+    width: 100%;
+    margin: 0 auto 60px auto;
+}
+
+header h1 {
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    padding: 0 10px;
+    margin: 10px 0;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+}
+
+header h2 {
+    width: 100%;
+    font-size: 42px;
+    text-align: center;
+    padding: 0 10px;
+    margin: 10px 0;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+}
+
+main h3 {
+    width: 100%;
+    font-size: 28px;
+    text-align: center;
+    padding: 0 10px;
+    margin: 10px 0;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 42px;
+    }
+    header h2 {
+        font-size: 36px;
+    }
+    main h3 {
+        font-size: 26px;
+    }
+}
+
+
+
+
+
+
+
+/* Table */
+
+main table {
+    border: 2px solid #d3d93c;
+    border-collapse: collapse;
+    padding: 0;
+    margin: 30px auto 100px auto;
+}
+
+main table thead {
+    background-color: #d3d93c;
+}
+
+main table thead tr th {
+    padding: 5px 10px;
+    border: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: normal;
+    text-align: center;
+}
+
+main table tbody {
+    border: 0;
+}
+
+main table tbody tr {
+    border: 0;
+}
+
+main table tbody tr td {
+    padding: 5px 10px;
+    border: 2px solid #d3d93c;
+    font-size: 18px;
+    text-align: center;
+}
+
+main table tbody tr td:first-of-type {
+    font-weight: 700;
+}
+
+main table tbody tr td:nth-of-type(2) {
+    text-transform: capitalize;
+}
+
+main table tbody tr td:nth-of-type(3) {
+    text-transform: capitalize;
+}
+
+main table tbody tr td:nth-of-type(4) {
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+/* Footer */
+
+footer {
+    background: #50535C;
+    padding: 10px 40px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    width: 100%;
+    margin: 100px auto 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+footer .footer-links {
+    font-size: 30px;
+}
+
+footer .footer-links a {
+    color: #d3d93c;
+    padding: 0 20px 0 0;
+    transition: 300ms;
+}
+
+footer .footer-links a:hover {
+    color: #ffffff;
+    transition: 300ms;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        flex-flow: column wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 20px;
+    }
+    footer p {
+        text-align: center;
+    }
+}
+
