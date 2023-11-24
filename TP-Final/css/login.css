@@ -1,0 +1,86 @@
+#my-header nav#my-nav {
+    position: static;
+}
+
+#login {
+    width: 90%;
+    margin: 50px auto 100px auto;
+}
+
+#login p {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+#login p:first-of-type {
+    color: var(--pink);
+    font-weight: 900;
+}
+
+#login form {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+#login form label {
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 7px;
+}
+
+#login form input {
+    display: block;
+    border-radius: 5px;
+    outline: 0;
+    border: 2px solid var(--gray);
+    font-size: 17px;
+    padding: 7px 10px;
+    color: var(--dark-gray);
+    width: 300px;
+}
+
+#login form input[type="text"]:focus,
+#login form input[type="password"]:focus {
+    border: 2px solid #767676;
+    background-color: #ffe4e4;
+    transition: 300ms;
+}
+
+#login form input:first-of-type {
+    margin-bottom: 30px;
+}
+
+#login form input[type="submit"] {
+    font-family: var(--base-font);
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 1.5;
+    display: block;
+    width: fit-content;
+    margin: 30px auto 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: var(--pink);
+    border-radius: 5px;
+    padding: 10px 30px;
+    color: var(--white);
+    transition: 300ms;
+    border: 0;
+    outline: 0;
+}
+
+@media screen and (max-width: 768px) {
+    #login form input[type="submit"] {
+        font-size: 16px;
+    }
+}
+
+#login form input[type="submit"]:hover {
+    background-color: var(--dark-gray);
+    transition: 300ms;
+}
+
