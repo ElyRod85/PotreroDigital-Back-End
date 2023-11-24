@@ -42,20 +42,13 @@
 
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-light" id="my-nav">
-      <a class="navbar-brand" href="index.html"><img src="imgs/logo.png" alt="Tina Helados" id="logo"></a>
+      <a class="navbar-brand" href="index.php"><img src="imgs/logo.png" alt="Tina Helados" id="logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">
-          <!-- 
-          <a class="nav-item nav-link" href="sabores.html">Sabores</a>
-          <a class="nav-item nav-link" href="#">Postres</a>
-          <a class="nav-item nav-link" href="#">Sucursales</a>
-          <a class="nav-item nav-link" href="#">Historia</a>
-          -->
           <a class="nav-item nav-link" href="login.html">Ingresar</a>
-          <a class="nav-item nav-link" href="#">Carrito</a>
         </div>
       </div>
     </nav>
@@ -387,196 +380,8 @@
     </div>
 
 
-<!--
-      <h3>Chocolates</h3>
-      <div class="contenedor">
-              <?php
-                    $connect = mysqli_connect("127.0.0.1","root","");
-                    mysqli_select_db($connect,"heladeria");
-
-                    $consult = "SELECT * FROM sabores WHERE categoria = 'Chocolates' ";
-
-                    $data = mysqli_query ($connect, $consult);
-
-                    while ($row = mysqli_fetch_array($data)) { ?>
-
-                    <div class="sabor">
-                        <p class="category"><?php echo $row['categoria']; ?></p>
-                        <p class="nombre"><?php echo $row['nombre']; ?></p>
-                        <p class="prod-id">ID <?php echo $row['id']; ?></p>
-                        <img src="<?php echo $row['foto']; ?>">
-                        
-                        <p class="desc"><?php echo $row['descripcion']; ?></p>
-                        <p>Precio (250g): $ <?php echo $row['precio']; ?></p>
-                        <a href="producto.php?id=<?php echo $row['id'];?>"> <button type="button" name="button">Ver</button></a>
-                    </div>
-              <?php } ?>
-      </div>
-
-
-      <h3>Dulces de leche</h3>
-      <div class="contenedor">
-              <?php
-                    $connect = mysqli_connect("127.0.0.1","root","");
-                    mysqli_select_db($connect,"heladeria");
-
-                    $consult = "SELECT * FROM sabores WHERE categoria = 'Dulces de leche' ";
-
-                    $data = mysqli_query ($connect, $consult);
-
-                    while ($row = mysqli_fetch_array($data)) { ?>
-
-                    <div class="sabor">
-                        <p class="category"><?php echo $row['categoria']; ?></p>
-                        <p class="nombre"><?php echo $row['nombre']; ?></p>
-                        <p class="prod-id">ID <?php echo $row['id']; ?></p>
-                        <img src="<?php echo $row['foto']; ?>">
-                        
-                        <p class="desc"><?php echo $row['descripcion']; ?></p>
-                        <p>Precio (250g): $ <?php echo $row['precio']; ?></p>
-                        <a href="producto.php?id=<?php echo $row['id'];?>"> <button type="button" name="button">Ver</button></a>
-                    </div>
-              <?php } ?>
-      </div>
-
-      <h3>Cremas</h3>
-      <div class="contenedor">
-              <?php
-                    $connect = mysqli_connect("127.0.0.1","root","");
-                    mysqli_select_db($connect,"heladeria");
-
-                    $consult = "SELECT * FROM sabores WHERE categoria = 'Cremas' ";
-
-                    $data = mysqli_query ($connect, $consult);
-
-                    while ($row = mysqli_fetch_array($data)) { ?>
-
-                    <div class="sabor">
-                        <p class="category"><?php echo $row['categoria']; ?></p>
-                        <p class="nombre"><?php echo $row['nombre']; ?></p>
-                        <p class="prod-id">ID <?php echo $row['id']; ?></p>
-                        <img src="<?php echo $row['foto']; ?>">
-                        
-                        <p class="desc"><?php echo $row['descripcion']; ?></p>
-                        <p>Precio (250g): $ <?php echo $row['precio']; ?></p>
-                        <a href="producto.php?id=<?php echo $row['id'];?>"> <button type="button" name="button">Ver</button></a>
-                    </div>
-              <?php } ?>
-      </div>
-
-      <h3>Frutales (crema)</h3>
-      <div class="contenedor">
-              <?php
-                    $connect = mysqli_connect("127.0.0.1","root","");
-                    mysqli_select_db($connect,"heladeria");
-
-                    $consult = "SELECT * FROM sabores WHERE categoria = 'Frutales (crema)' ";
-
-                    $data = mysqli_query ($connect, $consult);
-
-                    while ($row = mysqli_fetch_array($data)) { ?>
-
-                    <div class="sabor">
-                        <p class="category"><?php echo $row['categoria']; ?></p>
-                        <p class="nombre"><?php echo $row['nombre']; ?></p>
-                        <p class="prod-id">ID <?php echo $row['id']; ?></p>
-                        <img src="<?php echo $row['foto']; ?>">
-                        
-                        <p class="desc"><?php echo $row['descripcion']; ?></p>
-                        <p>Precio (250g): $ <?php echo $row['precio']; ?></p>
-                        <a href="producto.php?id=<?php echo $row['id'];?>"> <button type="button" name="button">Ver</button></a>
-                    </div>
-              <?php } ?>
-      </div>
-
-      <h3>Frutales (agua)</h3>
-      <div class="contenedor">
-              <?php
-                    $connect = mysqli_connect("127.0.0.1","root","");
-                    mysqli_select_db($connect,"heladeria");
-
-                    $consult = "SELECT * FROM sabores WHERE categoria = 'Frutales (agua)' ";
-
-                    $data = mysqli_query ($connect, $consult);
-
-                    while ($row = mysqli_fetch_array($data)) { ?>
-
-                    <div class="sabor">
-                        <p class="category"><?php echo $row['categoria']; ?></p>
-                        <p class="nombre"><?php echo $row['nombre']; ?></p>
-                        <p class="prod-id">ID <?php echo $row['id']; ?></p>
-                        <img src="<?php echo $row['foto']; ?>">
-                        
-                        <p class="desc"><?php echo $row['descripcion']; ?></p>
-                        <p>Precio (250g): $ <?php echo $row['precio']; ?></p>
-                        <a href="producto.php?id=<?php echo $row['id'];?>"> <button type="button" name="button">Ver</button></a>
-                    </div>
-              <?php } ?>
-      </div>
-
-
-      <h3>Incomibles</h3>
-      <div class="contenedor">
-              <?php
-                    $connect = mysqli_connect("127.0.0.1","root","");
-                    mysqli_select_db($connect,"heladeria");
-
-                    $consult = "SELECT * FROM sabores WHERE categoria = 'Incomibles' ";
-
-                    $data = mysqli_query ($connect, $consult);
-
-                    while ($row = mysqli_fetch_array($data)) { ?>
-
-                    <div class="sabor">
-                        <p class="category"><?php echo $row['categoria']; ?></p>
-                        <p class="nombre"><?php echo $row['nombre']; ?></p>
-                        <p class="prod-id">ID <?php echo $row['id']; ?></p>
-                        <img src="<?php echo $row['foto']; ?>">
-                        
-                        <p class="desc"><?php echo $row['descripcion']; ?></p>
-                        <p>Precio (250g): $ <?php echo $row['precio']; ?></p>
-                        <a href="producto.php?id=<?php echo $row['id'];?>"> <button type="button" name="button">Ver</button></a>
-                    </div>
-              <?php } ?>
-      </div>
-                    -->
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-    <!--
-    <section class="features">
-      <article>
-        <i class="fa-solid fa-money-bill-wave"></i>
-        <p>Pagá en efectivo al recibir tu pedido</p>
-      </article>
-      <article>
-        <i class="fa-regular fa-credit-card"></i>
-        <p>Pagá en línea con tu tarjeta de débito o crédito</p>
-      </article>
-      <article>
-        <i class="fa-solid fa-calendar-days"></i>
-        <p>Programá tu pedido para recibirlo cuando quieras</p>
-      </article>
-      <article>
-        <i class="fa-solid fa-motorcycle"></i>
-        <p>Todos los envíos a partir de $5000 son sin costo</p>
-      </article>
-    </section>
-
-    <section class="newsletter">
-      descuentos exclusivos
-    </section>
-    -->
 
   </main>
 
