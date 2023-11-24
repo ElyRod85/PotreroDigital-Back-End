@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Bebas+Neue&display=swap');
+
+
+* {
+    font-family: 'Barlow', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    color: #50535C;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    transition: 300ms;
+}
+
+a:hover {
+    text-decoration: none;
+    transition: 300ms;
+}
+
+main {
+    width: 90%;
+    margin: 50px auto 50px auto;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+strong {
+    font-weight: 700;
+}
+
+
+/* Nav */
+
+nav {
+    background-color: #50535C;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+nav img {
+    max-height: 80px;
+}
+
+nav .info {
+    text-align: right;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+nav .info p.name {
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0;
+}
+
+nav .info p.data {
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 40px 20px;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    nav .info {
+        text-align: center;
+        margin-top: 30px;
+    }
+    nav img {
+        max-width: 90%;
+        max-height: auto;
+    }
+}
+
+
+/* Header */
+
+header {
+    width: 100%;
+    margin: 0 auto 60px auto;
+}
+
+header h1 {
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    padding: 0 10px;
+    margin: 10px 0;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+}
+
+header h2 {
+    width: 100%;
+    font-size: 42px;
+    text-align: center;
+    padding: 0 10px;
+    margin: 10px 0;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 42px;
+    }
+    header h2 {
+        font-size: 36px;
+    }
+}
+
+
+
+/* Projects */
+
+section.projects {
+    width: 100%;
+    margin: 50px auto 50px auto;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+    gap: 50px;
+}
+
+section.projects article {
+    width: 30%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #50535C;
+    border: 3px solid #d3d93c;
+}
+
+@media screen and (max-width: 1024px) {
+    section.projects article {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section.projects article {
+        width: 100%;
+    }
+}
+
+section.projects article h3 {
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 26px;
+    text-align: center;
+    background-color: #d3d93c;
+    display: block;
+    padding: 10px;
+    letter-spacing: 1px;
+    margin: 0 auto 30px auto;
+    color: #50535C;
+}
+
+section.projects article p {
+    padding: 5px 10px;
+    margin: 0;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+section.projects article a {
+    font-family: 'Barlow', sans-serif;
+    background-color: #d3d93c;
+    color: #50535C;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 7px 20px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    display: block;
+    text-align: center;
+    margin: 30px auto 40px auto;
+    width: fit-content;
+    transition: 300ms;
+}
+
+section.projects article a:hover {
+    background-color: #50535C;
+    color: #d3d93c;
+    transition: 300ms;
+}
+
+section.projects article i {
+    padding-left: 5px;
+}
+
+section.projects article hr {
+    width: 60%;
+    margin: 30px auto;
+    border-bottom: 3px solid #d3d93c;
+    opacity: 1;
+}
+
+
+
+/* Footer */
+
+footer {
+    background: #50535C;
+    padding: 10px 40px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    width: 100%;
+    margin: 100px auto 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+footer .footer-links {
+    font-size: 30px;
+}
+
+footer .footer-links a {
+    color: #d3d93c;
+    padding: 0 20px 0 0;
+    transition: 300ms;
+}
+
+footer .footer-links a:hover {
+    color: #ffffff;
+    transition: 300ms;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        flex-flow: column wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 20px;
+    }
+    footer p {
+        text-align: center;
+    }
+}
+
